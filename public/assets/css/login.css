@@ -11,7 +11,7 @@ html, body {
 
 body {
     margin: 0;
-    background: #fff url('../img/loginBg.jpg') no-repeat;
+    /*background: #fff url('../img/loginBg.jpg') no-repeat;*/
     background-size: cover;
     font: 13px normal 'OpenSans', helveticaneue, arial, sans-serif;
     color: #666;
