@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>cfft.ru | Клубы</title>
+
+    <link rel="stylesheet" type="text/css" href="plugins/bootstrap-3.3.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="plugins/bootstrap-3.3.2-dist/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="plugins/fontAwesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="plugins/toastr/toastr.min.css" />
+    <link rel="stylesheet" type="text/css" href="plugins/bootstrap-datepicker-master/css/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="plugins/bootstrap-datepicker-master/css/datepicker3.css" />
+    <link rel="stylesheet" type="text/css" href="plugins/select2/dist/select2.css" />
+    <link rel="stylesheet" type="text/css" href="plugins/select2/dist/select2-bootstrap.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/core.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <script type="text/javascript" src="plugins/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="plugins/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="plugins/mustache.js"></script>
+    <script type="text/javascript" src="plugins/bootbox.min.js"></script>
+    <script type="text/javascript" src="plugins/toastr/toastr.min.js"></script>
+    <script type="text/javascript" src="plugins/bootstrap-datepicker-master/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="plugins/bootstrap-datepicker-master/js/locales/bootstrap-datepicker.ru.js"></script>
+    <script type="text/javascript" src="plugins/mask.min.js"></script>
+    <script type="text/javascript" src="plugins/select2/dist/select2.js"></script>
+    <script type="text/javascript" src="plugins/select2/dist/select2_locale_ru.js"></script>
+
+</head>
+<body>
+
+<div class="page-wrapper">
+<div class="page-header">
+    <div class="container">
+        <div class="logo" id="logo">c<span class="redLogo">ff</span>t.ru</div>
+        <div class="main-menu-wrapper">
+            <ul class="main-menu" id="top-main-menu">
+                <li><a href="watch.html"><i class="fa fa-video-camera"></i>&nbsp;&nbsp;Видео</a></li>
+                <li><a href="events.html"><i class="fa fa-calendar"></i>&nbsp;&nbsp;События</a></li>
+                <!--<li><i class="fa fa-info-circle"></i>&nbsp;&nbsp;Полезная информация</li>-->
+                <li id="userObject" class="" data-view="login"><i class="fa fa-key"></i>&nbsp;&nbsp;Войти</li>
+                <li class="" data-view="login"><a href="registration.html"><i class="fa fa-key"></i>&nbsp;&nbsp;Регистрация</a></li>
+                <li class="" data-view="login"><a href="profile.html"><i class="fa fa-user"></i>&nbsp;&nbsp;Профиль</a></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="page-content">
+
+    <div class="container">
+        <h2>Клубы</h2>
+        <hr/>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Поиск клуба</label>
+                    <input class="form-control search-event" type="text" placeholder="Введите название" />
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Страна:</label>
+                    <select class="form-control" data-server_name="country" data-title="Страна" data-editor="select">
+                        <option>Россия</option>
+                        <option>Великобритания</option>
+                        <option>США</option>
+                        <option>Бельгия</option>
+                        <option>Татарстан</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Город:</label>
+                    <select class="form-control" data-server_name="city" data-title="Город" data-editor="select">
+                        <option>Москва</option>
+                        <option>Санкт-Петербург</option>
+                        <option>Екатеринбург</option>
+                        <option>Тверь</option>
+                        <option>Калуга</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Станция метро:</label>
+                    <select class="form-control" data-server_name="city" data-title="Город" data-editor="select">
+                        <option>Тимирязевская</option>
+                        <option>Пролетарская</option>
+                        <option>Арбатская</option>
+                        <option>Калужская</option>
+                        <option>Серпуховская</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="row marBot30">
+            <div class="clubs-list-wrapper">
+                <a href="club.html"><div class="club-item-wrapper col-md-3">
+                    <div class="club-item-image">
+                        <img src="img/fit1.jpg" />
+                    </div>
+                    <div class="club-item-info">
+                        <div class="club-item-title">Crossfit central</div>
+                        <div class="club-item-address"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Ул. Профсоюзная 14</div>
+                    </div>
+                </div></a>
+                <a href="club.html"><div class="club-item-wrapper col-md-3">
+                    <div class="club-item-image">
+                        <img src="img/fit2.jpg" />
+                    </div>
+                    <div class="club-item-info">
+                        <div class="club-item-title">xFit</div>
+                        <div class="club-item-address"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Ул. Новаторов 65</div>
+                    </div>
+                </div></a>
+                <a href="club.html"><div class="club-item-wrapper col-md-3">
+                    <div class="club-item-image">
+                        <img src="img/fit3.jpg" />
+                    </div>
+                    <div class="club-item-info">
+                        <div class="club-item-title">Reebok crossfit baza</div>
+                        <div class="club-item-address"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Ленинский пр. 40/2</div>
+                    </div>
+                </div></a>
+                <a href="club.html"><div class="club-item-wrapper col-md-3">
+                    <div class="club-item-image">
+                        <img src="img/fit4.jpg" />
+                    </div>
+                    <div class="club-item-info">
+                        <div class="club-item-title">Heavy Metal club</div>
+                        <div class="club-item-address"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Проектируемый пр. 16</div>
+                    </div>
+                </div></a>
+                <a href="club.html"><div class="club-item-wrapper col-md-3">
+                    <div class="club-item-image">
+                        <img src="img/fit5.jpg" />
+                    </div>
+                    <div class="club-item-info">
+                        <div class="club-item-title">Онегинъ</div>
+                        <div class="club-item-address"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Ул. Тверская-ямская 12</div>
+                    </div>
+                </div></a>
+                <a href="club.html"><div class="club-item-wrapper col-md-3">
+                    <div class="club-item-image">
+                        <img src="img/fit1.jpg" />
+                    </div>
+                    <div class="club-item-info">
+                        <div class="club-item-title">Crossfit central</div>
+                        <div class="club-item-address"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Ул. Профсоюзная 14</div>
+                    </div>
+                </div></a>
+                <a href="club.html"><div class="club-item-wrapper col-md-3">
+                    <div class="club-item-image">
+                        <img src="img/fit2.jpg" />
+                    </div>
+                    <div class="club-item-info">
+                        <div class="club-item-title">xFit</div>
+                        <div class="club-item-address"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Ул. Новаторов 65</div>
+                    </div>
+                </div></a>
+                <a href="club.html"><div class="club-item-wrapper col-md-3">
+                    <div class="club-item-image">
+                        <img src="img/fit3.jpg" />
+                    </div>
+                    <div class="club-item-info">
+                        <div class="club-item-title">Reebok crossfit baza</div>
+                        <div class="club-item-address"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Ленинский пр. 40/2</div>
+                    </div>
+                </div></a>
+                <a href="club.html"><div class="club-item-wrapper col-md-3">
+                    <div class="club-item-image">
+                        <img src="img/fit4.jpg" />
+                    </div>
+                    <div class="club-item-info">
+                        <div class="club-item-title">Heavy Metal club</div>
+                        <div class="club-item-address"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Проектируемый пр. 16</div>
+                    </div>
+                </div></a>
+                <a href="club.html"><div class="club-item-wrapper col-md-3">
+                    <div class="club-item-image">
+                        <img src="img/fit5.jpg" />
+                    </div>
+                    <div class="club-item-info">
+                        <div class="club-item-title">Онегинъ</div>
+                        <div class="club-item-address"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Ул. Тверская-ямская 12</div>
+                    </div>
+                </div></a>
+                <a href="club.html"><div class="club-item-wrapper col-md-3">
+                    <div class="club-item-image">
+                        <img src="img/fit1.jpg" />
+                    </div>
+                    <div class="club-item-info">
+                        <div class="club-item-title">Crossfit central</div>
+                        <div class="club-item-address"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Ул. Профсоюзная 14</div>
+                    </div>
+                </div></a>
+                <a href="club.html"><div class="club-item-wrapper col-md-3">
+                    <div class="club-item-image">
+                        <img src="img/fit2.jpg" />
+                    </div>
+                    <div class="club-item-info">
+                        <div class="club-item-title">xFit</div>
+                        <div class="club-item-address"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Ул. Новаторов 65</div>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="page-footer">
+
+    <div class="big-content-wrapper">
+        <div class="bot_bg bot_position">
+            <div class="container">
+                <div class="logo" id="footer_logo">c<span class="redLogo">ff</span>t.ru</div>
+                <div class="main-menu-wrapper" id="bot-main-menu">
+                    <ul class="main-menu">
+                        <li>Главная</li>
+                        <li>Обо мне</li>
+                        <li>Мероприятия</li>
+                        <li>Видео</li>
+                        <li>Crossfit</li>
+                        <li>Игры</li>
+                        <li>Войти</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script type="text/javascript" src="js/core.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+User-agent: Yandex
+Disallow: /admin
+Disallow: /profile
+Host: cfft.ru
+
+User-agent: Googlebot
+Disallow: /admin
+Disallow: /profile
+
+User-agent: *
+Disallow: /admin
+Disallow: /profile
+
+
+Sitemap:

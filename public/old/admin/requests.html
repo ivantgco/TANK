@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>cfft.ru | Главная страница</title>
+
+    <link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.2-dist/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/fontAwesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/toastr/toastr.min.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/bootstrap-datepicker-master/css/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/bootstrap-datepicker-master/css/datepicker3.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/select2/dist/select2.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/select2/dist/select2-bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/ckeditor/contents.css" />
+
+    <link rel="stylesheet" type="text/css" href="../css/core.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style_admin.css" />
+
+
+
+    <script type="text/javascript" src="../plugins/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../js/core.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="../plugins/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../plugins/mustache.js"></script>
+    <script type="text/javascript" src="../plugins/bootbox.min.js"></script>
+    <script type="text/javascript" src="../plugins/toastr/toastr.min.js"></script>
+    <script type="text/javascript" src="../plugins/bootstrap-datepicker-master/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="../plugins/bootstrap-datepicker-master/js/locales/bootstrap-datepicker.ru.js"></script>
+    <script type="text/javascript" src="../plugins/mask.min.js"></script>
+    <script type="text/javascript" src="../plugins/select2/dist/select2.js"></script>
+    <script type="text/javascript" src="../plugins/select2/dist/select2_locale_ru.js"></script>
+    <script type="text/javascript" src="assets/js/requests.js"></script>
+
+</head>
+<body>
+
+<div class="page-wrapper admin_layout">
+    <div class="page-header">
+        <div class="container">
+            <div class="logo" id="logo">c<span class="redLogo">ff</span>t.ru <span class="admin-text">| administration</span></div>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <div class="admin-main-menu-wrapper">
+            <div class="container">
+                <ul class="admin-main-menu">
+                    <li><a href="users.html">Пользователи</a></li>
+                    <li><a href="events.html">Мероприятия</a></li>
+                    <li><a href="requests.html">Заявки</a></li>
+                    <li><a href="#">Клубы</a></li>
+                    <li><a href="#">Судьи</a></li>
+                    <li><a href="#">Судейские курсы</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Рассылки</a></li>
+                    <li><a href="#">Статичные страницы</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>Заявки на участие</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Мероприятие:</label>
+                        <select class="form-control fc-control" data-filter="event" data-editor="select">
+                            <option value="1">Мероприятие 1</option>
+                            <option value="2">Мероприятие 2</option>
+                            <option value="3">Мероприятие 3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Этап мероприятия:</label>
+                        <select class="form-control fc-control" data-filter="event_part"  data-editor="select">
+                            <option value="1">Первый этап</option>
+                            <option value="2">Второй этап</option>
+                            <option value="3">Третий этап</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Клуб:</label>
+                        <select class="form-control">
+                            <option value="1">Crossfit central</option>
+                            <option value="1">sport unlimited</option>
+                            <option value="1">xFit</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>Атлет</th>
+                    <th>Реультат</th>
+                    <th>Судья</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><a href="user.html">Атлет 1</a></td>
+                    <td>5 (4 (11:27))</td>
+                    <td>123</td>
+                </tr>
+                <tr>
+                    <td><a href="user.html">Атлет 1</a></td>
+                    <td>5 (4 (11:27))</td>
+                    <td>234</td>
+                </tr>
+                <tr>
+                    <td><a href="user.html">Атлет 1</a></td>
+                    <td>5 (4 (11:27))</td>
+                    <td>234</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <nav>
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">«</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">»</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

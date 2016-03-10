@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>cfft.ru | Главная страница</title>
+
+    <link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.2-dist/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/fontAwesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/toastr/toastr.min.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/bootstrap-datepicker-master/css/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/bootstrap-datepicker-master/css/datepicker3.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/select2/dist/select2.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/select2/dist/select2-bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/ckeditor/contents.css" />
+
+    <link rel="stylesheet" type="text/css" href="../css/core.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style_admin.css" />
+
+    <script type="text/javascript" src="../plugins/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../plugins/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../plugins/mustache.js"></script>
+    <script type="text/javascript" src="../plugins/bootbox.min.js"></script>
+    <script type="text/javascript" src="../plugins/toastr/toastr.min.js"></script>
+    <script type="text/javascript" src="../plugins/bootstrap-datepicker-master/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="../plugins/bootstrap-datepicker-master/js/locales/bootstrap-datepicker.ru.js"></script>
+    <script type="text/javascript" src="../plugins/mask.min.js"></script>
+    <script type="text/javascript" src="../plugins/select2/dist/select2.js"></script>
+    <script type="text/javascript" src="../plugins/select2/dist/select2_locale_ru.js"></script>
+    <script type="text/javascript" src="../plugins/ckeditor/ckeditor.js"></script>
+
+</head>
+<body>
+
+<div class="page-wrapper admin_layout">
+<div class="page-header">
+    <div class="container">
+        <div class="logo" id="logo">c<span class="redLogo">ff</span>t.ru <span class="admin-text">| administration</span></div>
+    </div>
+</div>
+<div class="page-content">
+
+    <div class="admin-main-menu-wrapper">
+        <div class="container">
+            <ul class="admin-main-menu">
+                <li><a href="users.html">Пользователи</a></li>
+                <li><a href="events.html">Мероприятия</a></li>
+                <li><a href="requests.html">Заявки</a></li>
+                <li><a href="#">Клубы</a></li>
+                <li><a href="#">Судьи</a></li>
+                <li><a href="#">Судейские курсы</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Рассылки</a></li>
+                <li><a href="#">Статичные страницы</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Мероприятия</h2>
+        <hr/>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Название:</label>
+                            <input class="form-control" type="text" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Дата с:</label>
+                            <input class="form-control cf_datepicker" type="text" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Дата по:</label>
+                            <input class="form-control cf_datepicker" type="text" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="events-list-wrapper">
+                    <ul>
+                        <li>
+                            <div class="event-item-image">
+                                <img src="../img/event1.jpg" />
+                            </div>
+                            <div class="event-item-info">
+                                <div class="event-item-title">
+                                    <a href="event.html">Мероприятие 1</a>
+                                    <div class="event-item-date">21.02.2015</div>
+                                </div>
+                                <div class="event-item-desc">lorem ipsum dolor sit amet</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="event-item-image">
+                                <img src="../img/event2.jpg" />
+                            </div>
+                            <div class="event-item-info">
+                                <div class="event-item-title">
+                                    <a href="event.html">Мероприятие 2</a>
+                                    <div class="event-item-date">21.02.2015</div>
+                                </div>
+                                <div class="event-item-desc">lorem ipsum dolor sit amet</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="event-item-image">
+                                <img src="../img/event3.jpg" />
+                            </div>
+                            <div class="event-item-info">
+                                <div class="event-item-title">
+                                    <a href="event.html">Мероприятие 3</a>
+                                    <div class="event-item-date">21.02.2015</div>
+                                </div>
+                                <div class="event-item-desc">lorem ipsum dolor sit amet</div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+<script type="text/javascript" src="../js/core.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+
+</body>
+</html>

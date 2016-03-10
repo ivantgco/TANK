@@ -1,0 +1,41 @@
+<form class="form-horizontal">
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="col-md-6">
+                <div class="form-group col-md-12">
+                    {{{event}}}
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group col-md-12">
+                    {{{event_part}}}
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    {{#results}}
+        <div class="row order-event-part-result-row">
+            <div class="col-md-12">
+
+                <div class="form-group col-md-12">
+                    <label>Видео:</label>
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-video-camera"></i></div>
+                        <input type="text" class="form-control" id="video"/>
+                    </div>
+                </div>
+
+                <div class="form-group col-md-12">
+                    <label>{{title}}:</label>
+                    {{{editor}}}
+                </div>
+
+            </div>
+        </div>
+    {{/results}}
+
+</form>

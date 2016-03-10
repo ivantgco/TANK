@@ -1,0 +1,145 @@
+<div class="e-event-part-wrapper marTop22">
+    <form>
+
+        <div class="fn-train-overflow">
+            <div class="fn-train">
+                <div class="fn-vagon">
+
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <label>Наименование:</label>
+                            <input class="form-control fc_control" data-editor="text" data-column="title" type="text" value="{{title}}"/>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Задание:</label>
+                            <input class="form-control fc_control" type="text"  data-editor="text" data-column="quest"  value="{{quest}}"/>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Формат подачи результата:</label>
+                            <select class="form-control fc_control" data-value="{{order_format}}"  data-editor="select" data-column="order_format" >
+                                <option value="-1">Выбрать</option>
+                                <option value="1">Время "55:55"</option>
+                                <option value="2">Повторы "55"</option>
+                                <option value="3">Tie break "5 (5 (55:55))"</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Дата начала:</label>
+                            <input class="form-control fc_datepicker fc_control" type="text" value="{{start_date}}"  data-editor="text" data-column="start_date" />
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Дата окончания:</label>
+                            <input class="form-control fc_datepicker fc_control" type="text" value="{{end_date}}"  data-editor="text" data-column="end_date" />
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Статус:</label>
+                            <select class="form-control fc_control" data-value="{{status}}"  data-editor="select" data-column="status" >
+                                <option value="-1">Черновик</option>
+                                <option value="1">Идет подготовка</option>
+                                <option value="2">Регистрация открыта</option>
+                                <option value="3">Регистрация закрыта</option>
+                                <option value="3">Опубликованы утвержденные резульаты</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label>Описание этапа, правила:</label>
+                            <textarea class="form-control cf_text_editor fc_control" value="{{desc}}" data-editor="html" data-column="desc" ></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="sBtn small red flRight remove-event-part marRight3">
+                                <i class="fa fa-trash-o"></i>&nbsp;&nbsp;Удалить
+                            </div>
+
+                            <div class="sBtn small green flRight save-edit-event-part marRight3">
+                                <i class="fa fa-save"></i>&nbsp;&nbsp;Сохранить
+                            </div>
+
+                            <div class="sBtn small blue flRight marRight3">
+                                <a href="requests.html?event_id=2&part_id=3">
+                                    <i class="fa fa-video-camera"></i>&nbsp;&nbsp;К заявкам <span class="badge">73</span>
+                                </a>
+                            </div>
+
+                            <div class="sBtn small blue flRight marRight3 to_results">
+                                <i class="fa fa-list-ul"></i>&nbsp;&nbsp;К результатам
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="fn-vagon">
+                    <h3>Проверенные заявки</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Атлет</th>
+                                <th>Реультат</th>
+                                <th>Судья</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="user.html">Атлет 1</a></td>
+                                <td>5 (4 (11:27))</td>
+                                <td><a href="judge.html">Судья 1</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="user.html">Атлет 1</a></td>
+                                <td>5 (4 (11:27))</td>
+                                <td><a href="judge.html">Судья 1</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="user.html">Атлет 1</a></td>
+                                <td>5 (4 (11:27))</td>
+                                <td><a href="judge.html">Судья 1</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="sBtn small blue flRight marRight3 back_results"><i class="fa fa-reply"></i>&nbsp;&nbsp;Назад</div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </form>
+</div>
+
+<!--title-->
+<!--задание title-->
+<!--формат подачи результата-->
+<!--default judgement finish datetime-->
+
+<!--status-->
+    <!--prepare-->
+        <!--main video-->
+        <!--wysiwyg-->
+        <!--main image-->
+        <!--main description-->
+        <!--start date-->
+        <!--end date-->
+    <!--in progress-->
+        <!--Tab 1 : {prepare}-->
+        <!--Tab 2 : unproved / unfinished table of results (see table of results)-->
+    <!--finished-->
+        <!--as “in progress” but title is “На проверке”-->
+        <!--finished and closed-->
+        <!--all tabs but proved table exept unproved-->
+
+<!--Форма заявки-->
+<!--Задание == action part [ “задание title” ] ( readonly )-->
+<!--Ссылка на видео-->
+<!--Результат в одном из трех форматов-->
+<!--клуб (да/нет), выбрать клуб-->

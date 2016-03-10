@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>cfft.ru | Главная страница</title>
+
+    <link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.2-dist/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/fontAwesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/toastr/toastr.min.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/bootstrap-datepicker-master/css/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/bootstrap-datepicker-master/css/datepicker3.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/select2/dist/select2.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/select2/dist/select2-bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/ckeditor/contents.css" />
+
+    <link rel="stylesheet" type="text/css" href="../css/core.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style_admin.css" />
+
+    <script type="text/javascript" src="../plugins/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../plugins/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../plugins/mustache.js"></script>
+    <script type="text/javascript" src="../plugins/bootbox.min.js"></script>
+    <script type="text/javascript" src="../plugins/toastr/toastr.min.js"></script>
+    <script type="text/javascript" src="../plugins/bootstrap-datepicker-master/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="../plugins/bootstrap-datepicker-master/js/locales/bootstrap-datepicker.ru.js"></script>
+    <script type="text/javascript" src="../plugins/mask.min.js"></script>
+    <script type="text/javascript" src="../plugins/select2/dist/select2.js"></script>
+    <script type="text/javascript" src="../plugins/select2/dist/select2_locale_ru.js"></script>
+    <script type="text/javascript" src="../plugins/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="../js/fn_train.js"></script>
+
+    <script type="text/javascript" src="assets/js/edit_event.js"></script>
+
+</head>
+<body>
+
+<div class="page-wrapper admin_layout">
+    <div class="page-header">
+        <div class="container">
+            <div class="logo" id="logo">c<span class="redLogo">ff</span>t.ru <span class="admin-text">| administration</span></div>
+        </div>
+    </div>
+    <div class="page-content">
+
+    <div class="admin-main-menu-wrapper">
+        <div class="container">
+            <ul class="admin-main-menu">
+                <li><a href="users.html">Пользователи</a></li>
+                <li><a href="events.html">Мероприятия</a></li>
+                <li><a href="requests.html">Заявки</a></li>
+                <li><a href="#">Клубы</a></li>
+                <li><a href="#">Судьи</a></li>
+                <li><a href="#">Судейские курсы</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Рассылки</a></li>
+                <li><a href="#">Статичные страницы</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Редактирование мероприятия</h2>
+        <hr/>
+
+        <div role="tabpanel">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="edit-event" class="active">
+                    <a href="#event-header" aria-controls="event-header" role="tab" data-toggle="tab">Общая информация</a>
+                </li>
+                <li role="edit-event">
+                    <a href="#event-parts" aria-controls="event-parts" role="tab" data-toggle="tab">Этапы мероприятия</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="event-header">
+                    <form class="marTop22">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Наименование:</label>
+                                    <input class="form-control" type="text" />
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Тип оплаты:</label>
+                                    <select class="form-control">
+                                        <option>Взнос за все мероприятие</option>
+                                        <option>Первое видео бесплатное, далее за каждую заявку</option>
+                                    </select>
+                                    <!--<input class="form-control" type="text" />-->
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Сумма оплаты:</label>
+                                    <div class="input-group">
+                                        <input class="form-control" type="number" />
+                                        <div class="input-group-addon"><i class="fa fa-ruble"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="form-group">
+                                    <label>Описание:</label>
+                                    <textarea class="form-control cf_text_editor"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h5><b>Призовые места</b></h5>
+                                        <hr/>
+                                        <div class="form-group">
+                                            <label>1-е Место:</label>
+                                            <input class="form-control" type="text" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>2-е Место:</label>
+                                            <input class="form-control" type="text" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>3-е Место:</label>
+                                            <input class="form-control" type="text" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>4-е Место:</label>
+                                            <input class="form-control" type="text" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>5-е Место:</label>
+                                            <input class="form-control" type="text" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Правила:</label>
+                                    <input class="form-control" type="file" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="event-parts">
+
+                    <div id="edit-event-parts-wrapper">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="add-event-part" class="sBtn flRight green small"><i class="fa fa-plus"></i>&nbsp;&nbsp;Добавть этап</div>
+                            </div>
+                        </div>
+
+                        <div role="tabpanel">
+                            <ul id="edit-event-part-tab-nav-wrapper" class="nav nav-tabs" role="tablist">
+                                <!--<li role="edit-event-part" class="active">-->
+                                    <!--<a href="#part1" aria-controls="part1" role="tab" data-toggle="tab">Этап 1</a>-->
+                                <!--</li>-->
+                            </ul>
+                            <div id="edit-event-part-tab-content-wrapper" class="tab-content">
+                                <!--<div role="tabpanel" class="tab-pane active" id="part1">-->
+
+                                <!--</div>-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+</div>
+
+<script type="text/javascript" src="../js/core.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+
+</body>
+</html>
