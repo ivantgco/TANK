@@ -7,5 +7,4 @@
 module.exports = function (params) {
     if (typeof params!=='object') params = {};
  ///dasd
-    //sdf
 };
